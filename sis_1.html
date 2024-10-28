@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Wishes!</title>
+    <link rel="icon" type="image/x-icon" href="ph.png">
+    <style>
+        /* Basic Styling */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe0f2, #f0f4ff);
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            color: #d5006d;
+            margin-bottom: 20px;
+        }
+        .gift-collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        /* Gift Card Styling */
+        .gift-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .gift-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+        .gift-card h3 {
+            color: #d5006d;
+            margin-bottom: 10px;
+        }
+        .gift-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        /* Hidden Message */
+        .gift-message {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d5006d;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            transition: opacity 0.3s;
+            border-radius: 15px;
+        }
+        .gift-card:hover .gift-message {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+        <!-- Background Music-->
+        <audio autoplay loop>
+            <source src="background_music_2.mp3" type="audio/mpeg" >    
+        </audio>
+
+<div class="container">
+    <h1>To a fabulous sister-in-law !</h1>
+    <div class="gift-collection">
+        <!-- Gift Card 1 -->
+        <div class="gift-card">
+            <h3>Hi Akka</h3>
+            <p>Happy Birthday sister, I am really blessed to have you in our lives !
+                <br>Innaikuh day konjam hard ah mudijalum, I'm so happy that we're all together ❤️. Akka uravugaloda azhage thali irukuradhu dhan, Even though we may in distant, I cherish what we have every time I think of us.
+                <br><i>Again, Iniya piradhanaal vazhthukal akka 🎂.</i>
+            </p>
+            <div class="gift-message">"Wish from Chennai ☀️"</div>
+        </div>
+        
+        <!-- Gift Card 2 -->
+        <div class="gift-card">
+            <h3>Hii Anni </h3>
+            <p>Many more happy returns stay happy together and lot of happiness yet to seee 💫 ,<br>
+                We as a family everything will come to us on right time 😊,
+                Annanaa nalla paththuko stay safe and avanum eppadium ungala paththupaanu therium so take care.
+                
+                <i>Once again many more happy returns of the day </i></p>
+            <div class="gift-message">"Wish from Coimbatore ❄️"</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
